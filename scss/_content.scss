@@ -19,7 +19,58 @@
         .nav {
             display: flex;
             justify-content: space-around;
+            align-items: center;
             width: 60%;
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+
+                button {
+                    font-family: 'Roboto', sans-serif;
+                    background: none;
+                    border: 0;
+                    font-size: inherit;
+
+                }
+
+                button::after {
+                    content: '\2c5';
+                    margin-left: 0.5rem;
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: -25%;
+                    margin: 1rem 0;
+                    // padding: 0.75rem 4rem;
+                    border-top: 0.2rem solid rgba(173, 216, 230, 0.5);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    width: 10rem;
+                    height: 2rem;
+                    text-align: center;
+                }
+            }
+
+            .dropdown:hover {
+                .dropdown-menu {
+                    display: block;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 0.05rem solid rgba(128, 128, 128, 0.25);
+                        height: 100%;
+                        background: white;
+
+                        a {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
 
             a {
                 text-decoration: none;
@@ -149,6 +200,16 @@
                 text-align: center;
                 padding-right: 0;
                 width: 100%;
+            }
+        }
+
+        .content-navbar {
+            flex-flow: column wrap;
+            justify-content: center;
+            height: 15rem;
+
+            .nav {
+                margin-top: 5rem;
             }
         }
 
