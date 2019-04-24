@@ -10,7 +10,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 9.5rem;
+        height: 9rem;
         border: 1px solid yellow;
 
         p {
@@ -30,17 +30,15 @@
         display: flex;
         align-items: center;
         border: 1px solid black;
-        height: 40rem;
+        height: 41rem;
         justify-content: flex-end;
-        background: url("../../content-body-bg.jpg") center fixed;
-        background-size: 125%;
+        background: url("../../content-body-bg.jpg") right fixed;
 
         .content-greeting {
             display: flex;
             flex-flow: column wrap;
             text-align: center;
             width: 30rem;
-            border: 1px solid red;
             // background: white;
             color: lightgray;
 
