@@ -13,6 +13,21 @@
         h2 {
             padding-bottom: 0.5rem;
         }
+
+        @media (max-width: 414px) {
+            height: 9rem;
+
+            .contact-options {
+
+                .contact-info {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
+                    flex-flow: row wrap;
+                }
+
+            }
+        }
     }
 
     h2 {
@@ -27,7 +42,6 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        align-items: space-between;
         text-align: center;
         width: 24rem;
         height: 55%;
@@ -35,9 +49,18 @@
         font-size: 0.85rem;
         line-height: 1.2rem;
 
+        .contact-info {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            height: 100%;
+            width: 75%;
+        }
+
         .contact-icons {
             display: flex;
             justify-content: space-evenly;
+            width: 25%;
         }
     }
 }
