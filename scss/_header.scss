@@ -5,7 +5,8 @@
     // justify-content: space-around;
     align-items: center;
     height: 5rem;
-    border: 1px solid red;
+    background: lightblue;
+    color: white;
 
     h2 {
         font-size: 1.5rem;
@@ -22,7 +23,6 @@
         text-align: center;
         width: 24rem;
         height: 55%;
-        border: 1px solid blue;
         font-size: 0.85rem;
         line-height: 1.2rem;
 
@@ -76,7 +76,6 @@
                 }
 
                 .contact-icons {
-                    border: 2px solid blue;
                     width: 100%;
 
                 }
