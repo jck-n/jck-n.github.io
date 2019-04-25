@@ -103,8 +103,7 @@
 
         .company-container {
             flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
+            @include centerObject();
             height: 50rem;
             margin: 0 auto;
             padding: 0;
@@ -214,9 +213,11 @@
             }
 
             .conv-container {
+                background-position-x: 95%;
+                background-position-y: 95%;
+
                 .conv-info-container {
                     width: 80%;
-                    border: 1px solid red;
                 }
             }
         }

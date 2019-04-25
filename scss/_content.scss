@@ -47,7 +47,6 @@
                     position: absolute;
                     top: 100%;
                     left: -25%;
-                    // margin: 1rem 0;
                     border-top: 0.2rem solid rgba(173, 216, 230, 0.5);
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                     width: 10rem;
@@ -81,12 +80,12 @@
         }
     }
 
-    //Splash page
+    // Splash page
 
     .content-splash {
         display: flex;
         align-items: center;
-        height: 41rem;
+        height: 43rem;
         justify-content: flex-end;
         background: url("../../content-body-bg.jpg") top fixed;
 
@@ -110,7 +109,7 @@
         }
     }
 
-    // Containers holding hours, payment info, etc below Splash.
+    // About -- Containers holding hours, payment info, etc below Splash.
 
     .content-about {
         display: flex;
@@ -146,9 +145,7 @@
     // Company Information
 
     .company-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerObject();
         @include contentBox();
 
         img {
@@ -188,9 +185,10 @@
                 display: flex;
                 justify-content: center;
 
-                button {
+                a {
                     margin: 0 1rem;
                     @include buttonStyle();
+                    @include centerObject();
                 }
 
                 button:last-child {
@@ -252,9 +250,7 @@
     // Benefit/Convenience (below services)
 
     .conv-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerObject();
         width: 100%;
         height: 22.5rem;
         background: url("../../conv-bg.jpg") bottom fixed;
@@ -266,20 +262,29 @@
             justify-content: space-evenly;
             text-align: center;
             width: 40%;
+            max-width: 35rem;
             height: 13rem;
             margin: 0 1rem;
             color: white;
-            opacity: 0;
 
             h2 {
                 @include boldText();
             }
 
-            button {
+            a {
+                @include centerObject();
                 @include buttonStyle();
                 background: white;
                 color: black;
             }
         }
+    }
+
+    .quicklinks-container {
+        display: flex;
+        justify-content: space-evenly;
+
+        width: 100%;
+
     }
 }

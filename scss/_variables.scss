@@ -17,6 +17,13 @@
     font-family: inherit;
     font-size: 1rem;
     color: white;
+    text-decoration: none;
+}
+
+@mixin centerObject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // Keyframes
