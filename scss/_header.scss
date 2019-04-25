@@ -40,47 +40,4 @@
             width: 25%;
         }
     }
-
-    @media (max-width: 768px) {
-        flex-flow: column wrap;
-        justify-content: center;
-        height: 6rem;
-
-        .contact-options {
-            height: 3rem;
-        }
-
-        h2 {
-            padding: 0.5rem 0;
-            width: 100%;
-        }
-
-        @media (max-width: 414px) {
-            height: 8rem;
-
-            h2 {
-                width: 100%;
-                margin: none;
-            }
-
-            .contact-options {
-                display: flex;
-                flex-flow: column wrap;
-                height: 5rem;
-                width: 100%;
-
-                .contact-info {
-                    align-content: space-evenly;
-                    width: 90%;
-                    max-height: 2.5rem;
-                }
-
-                .contact-icons {
-                    width: 100%;
-
-                }
-
-            }
-        }
-    }
 }

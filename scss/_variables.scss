@@ -3,6 +3,11 @@
     height: 30rem;
 }
 
+@mixin boldText {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 // Keyframes
 
 @keyframes fadeIn {
