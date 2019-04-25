@@ -5,7 +5,8 @@
     // justify-content: space-around;
     align-items: center;
     height: 5rem;
-    border: 1px solid red;
+    background: lightblue;
+    color: white;
 
     h2 {
         font-size: 1.5rem;
@@ -22,7 +23,6 @@
         text-align: center;
         width: 24rem;
         height: 55%;
-        border: 1px solid blue;
         font-size: 0.85rem;
         line-height: 1.2rem;
 
@@ -38,50 +38,6 @@
             display: flex;
             justify-content: space-evenly;
             width: 25%;
-        }
-    }
-
-    @media (max-width: 768px) {
-        flex-flow: column wrap;
-        justify-content: center;
-        height: 6rem;
-
-        .contact-options {
-            height: 3rem;
-        }
-
-        h2 {
-            padding: 0.5rem 0;
-            width: 100%;
-        }
-
-        @media (max-width: 414px) {
-            height: 8rem;
-
-            h2 {
-                width: 100%;
-                margin: none;
-            }
-
-            .contact-options {
-                display: flex;
-                flex-flow: column wrap;
-                height: 5rem;
-                width: 100%;
-
-                .contact-info {
-                    align-content: space-evenly;
-                    width: 90%;
-                    max-height: 2.5rem;
-                }
-
-                .contact-icons {
-                    border: 2px solid blue;
-                    width: 100%;
-
-                }
-
-            }
         }
     }
 }

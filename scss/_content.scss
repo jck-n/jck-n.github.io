@@ -3,7 +3,8 @@
 .content-container {
     width: 100%;
     height: 100%;
-    border: 2px solid green;
+
+    // Navbar above splash for page navigation
 
     .content-navbar {
         display: flex;
@@ -11,7 +12,6 @@
         align-items: center;
         width: 100%;
         height: 9rem;
-        border: 1px solid yellow;
 
         p {
             width: 35%;
@@ -21,8 +21,58 @@
         .nav {
             display: flex;
             justify-content: space-around;
-            border: 1px solid blue;
+            align-items: center;
             width: 60%;
+
+            .dropdown {
+                position: relative;
+                display: flex;
+                padding: 1rem 0;
+
+                button {
+                    font-family: 'Roboto', sans-serif;
+                    background: none;
+                    border: 0;
+                    font-size: inherit;
+
+                }
+
+                button::after {
+                    content: '\2c5';
+                    margin-left: 0.5rem;
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: -25%;
+                    // margin: 1rem 0;
+                    border-top: 0.2rem solid rgba(173, 216, 230, 0.5);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    width: 10rem;
+                    height: 2rem;
+                    text-align: center;
+                }
+            }
+
+            .dropdown:hover {
+                .dropdown-menu {
+                    display: block;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 0.05rem solid rgba(128, 128, 128, 0.25);
+                        height: 100%;
+                        background: white;
+
+                        a {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
 
             a {
                 text-decoration: none;
@@ -31,19 +81,20 @@
         }
     }
 
+    //Splash page
+
     .content-splash {
         display: flex;
         align-items: center;
         height: 41rem;
         justify-content: flex-end;
-        background: url("../../content-body-bg.jpg") right fixed;
+        background: url("../../content-body-bg.jpg") top fixed;
 
         .content-greeting {
             display: flex;
             flex-flow: column wrap;
             text-align: right;
             padding-right: 3rem;
-            // border: 1px solid red;
             color: lightgray;
 
             h2 {
@@ -51,13 +102,21 @@
                 font-size: 1.4rem;
                 font-weight: bold;
             }
+
+            h2,
+            p {
+                animation: fadeIn 2s;
+            }
         }
     }
+
+    // Containers holding hours, payment info, etc below Splash.
 
     .content-about {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
+        min-width: 100%;
         width: 100%;
         background: rgb(80, 80, 80);
         height: 15rem;
@@ -70,6 +129,7 @@
             width: 15rem;
             height: 100%;
             color: white;
+            opacity: 0;
 
             h2 {
                 font-weight: bold;
@@ -83,17 +143,18 @@
         }
     }
 
+    // Company Information
+
     .company-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 30rem;
+        @include contentBox();
 
         img {
             width: 30rem;
             height: 20rem;
-            margin-right: 1rem;
+            margin: 0 1rem;
         }
 
         .company-info {
@@ -102,31 +163,30 @@
             justify-content: space-around;
             align-items: center;
             width: 35rem;
-            height: 85%;
+            height: 100%;
             margin-left: 1rem;
             text-align: center;
             line-height: 1.5rem;
 
             h2 {
-                font-size: 2.25rem;
-                font-weight: bold;
+                @include boldText();
+                margin-top: 1rem;
+            }
+
+            h2:before,
+            h2:after {
+                content: '\00a0\00a0\00a0';
+                text-decoration: line-through;
+                margin: auto 0.2em;
             }
 
             p {
                 width: 85%;
             }
 
-            h2:before,
-            h2:after {
-                content: '\00a0\00a0\00a0\00a0\00a0\00a0';
-                text-decoration: line-through;
-                margin: auto 0.4em;
-            }
-
             .info-buttons {
                 display: flex;
                 justify-content: center;
-                width: 100%;
 
                 button {
                     margin: 0 1rem;
@@ -147,30 +207,50 @@
         }
     }
 
-    @media (max-width: 768px) {
-        .content-splash {
-            .content-greeting {
-                text-align: center;
-                padding-right: 0;
-                width: 100%;
-            }
+    // Services
+
+    .service-container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+        @include contentBox();
+        margin-top: 3rem;
+
+        h2 {
+            @include boldText();
         }
 
-        .content-about {
-            flex-flow: column wrap;
-            justify-content: space-around;
-            align-items: center;
-            height: 50rem;
+        h2::before,
+        h2::after {
+            content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+            text-decoration: line-through;
+            margin: auto 0.4em;
+        }
 
-            .about-container {
-                max-height: 15rem;
+        .services {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            width: 75%;
+            max-width: 55rem;
+            height: 25rem;
 
-                h2 {
-                    font-size: 1.4rem;
+            .service-box {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: space-around;
+                height: 50%;
+                min-width: 15rem;
+
+                i {
+                    margin-bottom: 1rem;
                 }
 
-                p {
-                    font-size: 1.2rem;
+                h3 {
+                    font-size: 1.5rem;
+                    text-align: center;
                 }
             }
         }
