@@ -62,10 +62,15 @@
         .content-navbar {
             flex-flow: column wrap;
             justify-content: center;
-            height: 15rem;
+            height: 18rem;
+
+            img {
+                width: 15rem;
+                max-height: 15rem;
+                border: 1px solid red;
+            }
 
             .nav {
-                margin-top: 5rem;
 
                 a {
                     margin: 0 0.2rem;
@@ -149,6 +154,16 @@
         }
 
         @media (max-width: 450px) {
+            .content-navbar {
+                img {
+                    width: 10rem;
+                }
+
+                .nav {
+                    width: 100%;
+                }
+            }
+
             .content-splash {
 
                 .content-greeting {
@@ -187,12 +202,12 @@
                 .services {
                     min-height: 0;
                     align-items: center;
-                    height: 40rem;
+                    height: 30rem;
                     max-width: 100%;
 
                     .service-box {
                         justify-content: center;
-
+                        width: 50%;
                         min-width: 0;
                         font-size: 0.75rem;
 
