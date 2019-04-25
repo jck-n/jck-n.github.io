@@ -8,6 +8,17 @@
     font-weight: bold;
 }
 
+@mixin buttonStyle {
+    width: 7.5rem;
+    height: 2.75rem;
+    border: 0;
+    border-radius: 7.5%;
+    background: lightblue;
+    font-family: inherit;
+    font-size: 1rem;
+    color: white;
+}
+
 // Keyframes
 
 @keyframes fadeIn {

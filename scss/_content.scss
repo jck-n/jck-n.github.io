@@ -190,14 +190,7 @@
 
                 button {
                     margin: 0 1rem;
-                    width: 7.5rem;
-                    height: 2.75rem;
-                    border: 0;
-                    border-radius: 7.5%;
-                    background: lightblue;
-                    font-family: inherit;
-                    font-size: 1rem;
-                    color: white;
+                    @include buttonStyle();
                 }
 
                 button:last-child {
@@ -241,8 +234,7 @@
                 flex-flow: column wrap;
                 align-items: center;
                 justify-content: space-around;
-                height: 50%;
-                min-width: 15rem;
+                min-width: 14rem;
 
                 i {
                     margin-bottom: 1rem;
@@ -252,6 +244,39 @@
                     font-size: 1.5rem;
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    .conv-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 22.5rem;
+        background: gray;
+
+        .conv-info-container {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            width: 40%;
+            height: 13rem;
+            margin: 0 1rem;
+            border: 1px solid red;
+
+            h2 {
+                @include boldText();
+            }
+
+            p {
+                width: 85%;
+            }
+
+            button {
+                @include buttonStyle();
             }
         }
     }
