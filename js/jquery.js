@@ -2,7 +2,7 @@ $(document).ready(function () {
     var s = $(".about-container");
     $(window).scroll(function () {
         var windowpos = $(window).scrollTop();
-        if (windowpos >= 150 && windowpos <= 1000) {
+        if (windowpos >= 165 && windowpos <= 1500) {
             s.css("opacity", 0);
             s.addClass("scrollFadeIn");
             s.removeClass("scrollFadeOut");
