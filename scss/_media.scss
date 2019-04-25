@@ -121,6 +121,21 @@
             }
         }
 
+        .conv-container {
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 1px solid blue;
+            height: 37.5rem;
+
+            .conv-info-container {
+                width: 65%;
+
+                p {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
         .service-container {
             height: 50rem;
 
@@ -195,6 +210,13 @@
                 h2:before,
                 h2:after {
                     content: '\00a0\00a0\00a0\00a0';
+                }
+            }
+
+            .conv-container {
+                .conv-info-container {
+                    width: 80%;
+                    border: 1px solid red;
                 }
             }
         }

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var aboutFade = $(".about-container");
+    var convFade = $(".conv-info-container");
 
     function fadeElementIn(element) {
         element.css("opacity", 0);
@@ -21,6 +22,12 @@ $(document).ready(function () {
             fadeElementIn(aboutFade);
         } else {
             fadeElementOut(aboutFade);
+        }
+
+        if (windowpos >= 1200) {
+            fadeElementIn(convFade);
+        } else {
+            fadeElementOut(convFade);
         }
     });
 });
