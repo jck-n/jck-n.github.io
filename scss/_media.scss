@@ -121,21 +121,35 @@
             }
         }
 
-        .service-container {
-            height: 40rem;
+        .conv-container {
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 1px solid blue;
+            height: 37.5rem;
 
-            .services {
-                justify-content: center;
-                width: 90%;
+            .conv-info-container {
+                width: 65%;
 
-                .service-box {
-                    min-width: 0;
-                    margin: 0 1rem;
+                p {
+                    font-size: 0.85rem;
                 }
             }
         }
 
-        @media (max-width: 425px) {
+        .service-container {
+            height: 50rem;
+
+            .services {
+                justify-content: center;
+
+                .service-box {
+                    min-width: 0;
+                    width: 33%;
+                }
+            }
+        }
+
+        @media (max-width: 450px) {
             .content-splash {
 
                 .content-greeting {
@@ -167,17 +181,49 @@
             }
 
             .service-container {
+                width: 100%;
+                height: 50rem;
+                justify-content: space-evenly;
+
+                .services {
+                    min-height: 0;
+                    align-items: center;
+                    height: 40rem;
+                    max-width: 100%;
+
+                    .service-box {
+                        justify-content: center;
+
+                        min-width: 0;
+                        font-size: 0.75rem;
+
+                        h3 {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                h2 {
+                    top: 0;
+                }
 
                 h2:before,
                 h2:after {
                     content: '\00a0\00a0\00a0\00a0';
                 }
             }
+
+            .conv-container {
+                .conv-info-container {
+                    width: 80%;
+                    border: 1px solid red;
+                }
+            }
         }
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
     .content-container {
         .company-container {
             img {
@@ -185,5 +231,15 @@
                 height: 12.5rem;
             }
         }
+
+        .service-container {
+            min-height: 40rem;
+
+            .services {
+                width: 100%;
+            }
+        }
     }
+
+
 }
