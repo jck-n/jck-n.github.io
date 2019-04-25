@@ -102,6 +102,11 @@
                 font-size: 1.4rem;
                 font-weight: bold;
             }
+
+            h2,
+            p {
+                animation: fadeIn 2s;
+            }
         }
     }
 
@@ -123,6 +128,7 @@
             width: 15rem;
             height: 100%;
             color: white;
+            opacity: 0;
 
             h2 {
                 font-weight: bold;
@@ -133,6 +139,14 @@
                 font-size: 0.9rem;
                 text-align: center;
             }
+        }
+
+        .scrollFadeIn {
+            animation: scrollFadeIn 0.4s linear 0.4s forwards;
+        }
+
+        .scrollFadeOut {
+            animation: scrollFadeOut 0.4s linear 0.4s forwards;
         }
     }
 
