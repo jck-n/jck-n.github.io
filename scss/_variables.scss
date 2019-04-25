@@ -1,3 +1,5 @@
+$orangeElement: rgb(226, 116, 21);
+
 @mixin contentBox {
     width: 100%;
     height: 30rem;
@@ -13,7 +15,7 @@
     height: 2.75rem;
     border: 0;
     border-radius: 7.5%;
-    background: lightblue;
+    background: $orangeElement;
     font-family: inherit;
     font-size: 1rem;
     color: white;
