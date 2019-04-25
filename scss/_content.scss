@@ -26,7 +26,8 @@
 
             .dropdown {
                 position: relative;
-                display: inline-block;
+                display: flex;
+                padding: 1rem 0;
 
                 button {
                     font-family: 'Roboto', sans-serif;
@@ -46,8 +47,7 @@
                     position: absolute;
                     top: 100%;
                     left: -25%;
-                    margin: 1rem 0;
-                    // padding: 0.75rem 4rem;
+                    // margin: 1rem 0;
                     border-top: 0.2rem solid rgba(173, 216, 230, 0.5);
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                     width: 10rem;
@@ -140,14 +140,6 @@
                 text-align: center;
             }
         }
-
-        .scrollFadeIn {
-            animation: scrollFadeIn 0.3s linear 0.3s forwards;
-        }
-
-        .scrollFadeOut {
-            animation: scrollFadeOut 0.3s linear 0.3s forwards;
-        }
     }
 
     // Company Information
@@ -170,7 +162,7 @@
             justify-content: space-around;
             align-items: center;
             width: 35rem;
-            height: 85%;
+            height: 100%;
             margin-left: 1rem;
             text-align: center;
             line-height: 1.5rem;
@@ -178,23 +170,19 @@
             h2 {
                 font-size: 2.25rem;
                 font-weight: bold;
-            }
-
-            p {
-                width: 85%;
+                margin-top: 1rem;
             }
 
             h2:before,
             h2:after {
                 content: '\00a0\00a0\00a0\00a0\00a0\00a0';
                 text-decoration: line-through;
-                margin: auto 0.4em;
+                margin: auto 0.2em;
             }
 
             .info-buttons {
                 display: flex;
                 justify-content: center;
-                width: 100%;
 
                 button {
                     margin: 0 1rem;
@@ -239,8 +227,8 @@
         .services {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
-            width: 60%;
+            justify-content: space-evenly;
+            width: 75%;
             height: 25rem;
 
             .service-box {
@@ -334,9 +322,12 @@
             height: 40rem;
 
             .services {
+                justify-content: center;
+                width: 90%;
 
                 .service-box {
                     min-width: 0;
+                    margin: 0 1rem;
                 }
             }
         }

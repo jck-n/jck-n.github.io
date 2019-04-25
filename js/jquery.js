@@ -1,15 +1,26 @@
 $(document).ready(function () {
-    var s = $(".about-container");
+    var aboutFade = $(".about-container");
+
+    function fadeElementIn(element) {
+        element.css("opacity", 0);
+        element.addClass("scrollFadeIn");
+        element.removeClass("scrollFadeOut");
+        element.delay(100);
+    }
+
+    function fadeElementOut(element) {
+        element.css("opacity", 1);
+        element.addClass("scrollFadeOut");
+        element.removeClass("scrollFadeIn");
+        element.delay(100);
+    }
+
     $(window).scroll(function () {
         var windowpos = $(window).scrollTop();
-        if (windowpos >= 165 && windowpos <= 1500) {
-            s.css("opacity", 0);
-            s.addClass("scrollFadeIn");
-            s.removeClass("scrollFadeOut");
+        if (windowpos >= 25 && windowpos <= 1500) {
+            fadeElementIn(aboutFade);
         } else {
-            s.css("opacity", 1);
-            s.addClass("scrollFadeOut");
-            s.removeClass("scrollFadeIn");
+            fadeElementOut(aboutFade);
         }
     });
 });
