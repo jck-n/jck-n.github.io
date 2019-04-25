@@ -155,11 +155,6 @@
             width: 30rem;
             height: 20rem;
             margin: 0 1rem;
-
-            @media (max-width: 1000px) {
-                width: 20rem;
-                height: 12.5rem;
-            }
         }
 
         .company-info {
@@ -238,6 +233,7 @@
             flex-flow: row wrap;
             justify-content: space-evenly;
             width: 75%;
+            max-width: 55rem;
             height: 25rem;
 
             .service-box {

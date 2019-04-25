@@ -11,8 +11,11 @@
         .contact-options {
             align-items: center;
             min-height: 7rem;
-            max-width: 90%;
-            border: 1px solid red;
+            min-width: 60%;
+
+            .contact-info {
+                line-height: 3rem;
+            }
         }
 
         h2 {
@@ -21,28 +24,29 @@
         }
 
         @media (max-width: 414px) {
-            height: 8rem;
+            height: 16.5rem;
+            justify-content: flex-start;
 
             h2 {
                 width: 100%;
-                margin: none;
+                margin: 1rem 0;
             }
 
             .contact-options {
                 display: flex;
-                flex-flow: column wrap;
+                flex-flow: row wrap;
                 height: 5rem;
                 width: 100%;
 
                 .contact-info {
-                    align-content: space-evenly;
-                    width: 90%;
-                    max-height: 2.5rem;
+                    width: 100%;
+                    border-bottom: 1px solid darkgray;
                 }
 
                 .contact-icons {
+                    align-items: center;
                     width: 100%;
-
+                    height: 5rem;
                 }
 
             }
@@ -54,15 +58,6 @@
 
 @media (max-width: 768px) {
     .content-container {
-
-        .content-splash {
-
-            .content-greeting {
-                text-align: center;
-                padding-right: 0;
-                width: 100%;
-            }
-        }
 
         .content-navbar {
             flex-flow: column wrap;
@@ -140,7 +135,16 @@
             }
         }
 
-        @media (max-width: 414px) {
+        @media (max-width: 425px) {
+            .content-splash {
+
+                .content-greeting {
+                    text-align: center;
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
             .company-container {
 
                 .company-info {
@@ -168,6 +172,17 @@
                 h2:after {
                     content: '\00a0\00a0\00a0\00a0';
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-container {
+        .company-container {
+            img {
+                width: 20rem;
+                height: 12.5rem;
             }
         }
     }
