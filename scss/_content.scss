@@ -40,6 +40,10 @@
                     }
                 }
 
+                button:hover {
+                    cursor: pointer;
+                }
+
                 .dropdown-menu {
                     display: none;
                     position: absolute;
@@ -85,11 +89,11 @@
     .content-splash {
         display: flex;
         align-items: center;
-        height: 50rem;
+        height: 51rem;
         justify-content: flex-end;
         background: url("../../img/splash-bg.jpg") fixed;
         background-position-x: 60%;
-        background-position-y: 75%;
+        background-position-y: 78%;
 
         .content-greeting {
             display: flex;
@@ -285,10 +289,7 @@
     .quicklinks-container {
         @include centerObject();
         @include contentBox();
-        // background: rgb(31, 31, 31);
-        border: 1px solid red;
 
-        // background: rgb(60, 60, 60);
 
         .quicklinks-widget-col {
             display: flex;
@@ -296,7 +297,6 @@
             justify-content: space-between;
             width: 20%;
             height: 85%;
-            border: 1px solid blue;
             margin: 0 2rem;
 
             .quicklinks-info-col {
@@ -307,7 +307,6 @@
 
         .quicklinks-info-col {
             @include footerColObj();
-            border: 1px solid blue;
 
             h2 {
                 display: flex;
@@ -332,7 +331,6 @@
             p {
                 width: 100%;
                 max-width: 13rem;
-                border: 1px solid red;
             }
         }
 
