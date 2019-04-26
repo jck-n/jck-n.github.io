@@ -1,4 +1,4 @@
-$orangeElement: rgb(226, 116, 21);
+$orangeElement: rgb(255, 222, 107);
 
 @mixin contentBox {
     width: 100%;
@@ -26,6 +26,15 @@ $orangeElement: rgb(226, 116, 21);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin footerColObj {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    width: 15%;
+    font-size: 0.85rem;
+    line-height: 1.1rem;
 }
 
 // Keyframes
