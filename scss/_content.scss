@@ -293,7 +293,7 @@
 
         .quicklinks-content-row {
             @include centerObject();
-            justify-content: space-evenly;
+            justify-content: space-around;
             height: 100%;
             width: 80%;
             min-width: fit-content;
