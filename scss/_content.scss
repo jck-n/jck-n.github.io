@@ -84,7 +84,7 @@
     .content-splash {
         display: flex;
         align-items: center;
-        height: 46rem;
+        height: 50rem;
         justify-content: flex-end;
         background: url("../../img/splash-bg.jpg") fixed;
         background-position-x: 60%;
@@ -295,7 +295,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 15%;
+            width: 20%;
             height: 85%;
             border: 1px solid blue;
             margin: 0 2rem;
@@ -313,9 +313,14 @@
 
         .quicklinks-widget-1 {
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-evenly;
+            align-items: center;
             height: 85%;
             margin-top: 0rem;
+
+            img {
+                // margin-bottom: auto;
+            }
 
             img,
             p {
