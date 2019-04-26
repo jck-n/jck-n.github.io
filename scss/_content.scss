@@ -91,9 +91,8 @@
         align-items: center;
         height: 51rem;
         justify-content: flex-end;
-        background: url("../../img/splash-bg.jpg") fixed;
-        background-position-x: 60%;
-        background-position-y: 78%;
+        background: url("../../img/splash-bg.gif") fixed;
+        background-size: 150%;
 
         .content-greeting {
             display: flex;
