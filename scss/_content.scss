@@ -34,11 +34,9 @@
                     border: 0;
                     font-size: inherit;
 
-                }
-
-                button::after {
-                    content: '\2c5';
-                    margin-left: 0.5rem;
+                    i {
+                        margin-left: 0.2rem;
+                    }
                 }
 
                 .dropdown-menu {
@@ -282,9 +280,7 @@
     }
 
     .quicklinks-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerObject();
         @include contentBox();
         // background: rgb(31, 31, 31);
         border: 1px solid red;
@@ -309,18 +305,25 @@
         .quicklinks-info-col {
             @include footerColObj();
             border: 1px solid blue;
+
+            h2 {
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+
+                img {
+                    width: 2rem;
+                }
+            }
+
         }
 
         .quicklinks-widget-1 {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             height: 85%;
             margin-top: 0rem;
-
-            img {
-                // margin-bottom: auto;
-            }
 
             img,
             p {
