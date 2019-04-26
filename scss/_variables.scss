@@ -33,8 +33,7 @@ $awgFont2: rgb(128, 118, 116);
 @mixin footerColObj {
     display: flex;
     flex-direction: column;
-    margin: 0 2rem;
-    width: 20%;
+    padding: 0 1rem;
     font-size: 0.85rem;
     line-height: 1.1rem;
 }
