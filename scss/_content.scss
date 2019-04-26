@@ -92,7 +92,7 @@
         height: 51rem;
         justify-content: flex-end;
         background: url("../../img/splash-bg.gif") fixed;
-        background-size: 150%;
+        background-size: 120rem;
 
         .content-greeting {
             display: flex;
@@ -133,7 +133,7 @@
             width: 15rem;
             height: 100%;
             color: white;
-            opacity: 0;
+            // opacity: 0;
 
             h2 {
                 font-weight: bold;
