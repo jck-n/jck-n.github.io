@@ -85,6 +85,12 @@
             }
         }
 
+        .content-splash {
+            background: url("../../img/splash-bg.gif");
+            background-position: 20%;
+            height: 45rem;
+        }
+
         .content-about {
             flex-flow: column wrap;
             justify-content: space-around;
@@ -211,6 +217,9 @@
             }
 
             .content-splash {
+                background: url("../../img/splash-bg.gif");
+                background-position: 20%;
+                height: 45rem;
 
                 .content-greeting {
                     text-align: center;
