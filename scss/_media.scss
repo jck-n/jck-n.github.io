@@ -128,8 +128,9 @@
         .conv-container {
             flex-direction: column;
             justify-content: space-evenly;
-            border: 1px solid blue;
             height: 37.5rem;
+            background-position-x: 25%;
+            background-position-y: 100%;
 
             .conv-info-container {
                 width: 65%;
