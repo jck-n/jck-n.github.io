@@ -1,347 +1,355 @@
 @import "variables";
 
-.content-container {
-    width: 100%;
-    height: 100%;
-
-    // Navbar above splash for page navigation
-
-    .content-navbar {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+.container {
+    .content-container {
         width: 100%;
-        height: 9rem;
+        height: 100%;
 
-        img {
-            width: 15rem;
-        }
+        // Navbar above splash for page navigation
 
-        .nav {
+        .content-navbar {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
-            width: 60%;
+            width: 100%;
+            height: 9rem;
 
-            .dropdown {
-                position: relative;
+            img {
+                width: 15rem;
+            }
+
+            .nav {
                 display: flex;
-                padding: 1rem 0;
+                justify-content: space-around;
+                align-items: center;
+                width: 60%;
 
-                button {
-                    font-family: 'Roboto', sans-serif;
-                    background: none;
-                    border: 0;
-                    font-size: inherit;
-                    color: $awgFont1;
+                .dropdown {
+                    position: relative;
+                    display: flex;
+                    padding: 1rem 0;
 
-                    i {
-                        margin-left: 0.2rem;
+                    button {
+                        font-family: 'Roboto', sans-serif;
+                        background: none;
+                        border: 0;
+                        font-size: inherit;
+                        color: $awgFont1;
+
+                        i {
+                            margin-left: 0.2rem;
+                        }
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                    }
+
+                    .dropdown-menu {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: -25%;
+                        border-top: 0.2rem solid $orangeElement;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        width: 10rem;
+                        height: 2rem;
+                        text-align: center;
                     }
                 }
 
-                button:hover {
-                    cursor: pointer;
-                }
+                .dropdown:hover {
 
-                .dropdown-menu {
-                    display: none;
-                    position: absolute;
-                    top: 100%;
-                    left: -25%;
-                    border-top: 0.2rem solid $orangeElement;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                    width: 10rem;
-                    height: 2rem;
-                    text-align: center;
-                }
-            }
+                    .dropdown-menu {
+                        display: block;
 
-            .dropdown:hover {
+                        li {
+                            display: flex;
+                            align-items: center;
+                            border-bottom: 0.05rem solid rgba(128, 128, 128, 0.25);
+                            height: 100%;
+                            background: white;
 
-                .dropdown-menu {
-                    display: block;
-
-                    li {
-                        display: flex;
-                        align-items: center;
-                        border-bottom: 0.05rem solid rgba(128, 128, 128, 0.25);
-                        height: 100%;
-                        background: white;
-
-                        a {
-                            width: 100%;
-                            color: $awgFont2;
+                            a {
+                                width: 100%;
+                                color: $awgFont2;
+                            }
                         }
                     }
                 }
-            }
-
-            a {
-                text-decoration: none;
-                color: $awgFont1;
-            }
-        }
-    }
-
-    // Splash page
-
-    .content-splash {
-        display: flex;
-        align-items: center;
-        height: 51rem;
-        justify-content: flex-end;
-        background: url("../../img/splash-bg.gif") fixed;
-        background-size: 120rem;
-
-        .content-greeting {
-            display: flex;
-            flex-flow: column wrap;
-            text-align: right;
-            padding-right: 3rem;
-            color: lightgray;
-
-            h2 {
-                margin-bottom: 0.5rem;
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-
-            h2,
-            p {
-                animation: fadeIn 2s;
-            }
-        }
-    }
-
-    // About -- Containers holding hours, payment info, etc below Splash.
-
-    .content-about {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        min-width: 100%;
-        width: 100%;
-        background: rgb(80, 80, 80);
-        height: 15rem;
-
-        .about-container {
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 15rem;
-            height: 100%;
-            color: white;
-            // opacity: 0;
-
-            h2 {
-                font-weight: bold;
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-                text-align: center;
-            }
-        }
-    }
-
-    // Company Information
-
-    .company-container {
-        @include centerObject();
-        @include contentBox();
-
-        img {
-            width: 30rem;
-            height: 20rem;
-            margin: 0 1rem;
-        }
-
-        .company-info {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-around;
-            align-items: center;
-            width: 35rem;
-            height: 100%;
-            margin-left: 1rem;
-            text-align: center;
-            line-height: 1.5rem;
-
-            h2 {
-                @include boldText();
-                margin-top: 1rem;
-            }
-
-            h2:before,
-            h2:after {
-                content: '\00a0\00a0\00a0';
-                text-decoration: line-through;
-                margin: auto 0.2em;
-            }
-
-            p {
-                width: 85%;
-            }
-
-            .info-buttons {
-                display: flex;
-                justify-content: center;
 
                 a {
-                    margin: 0 1rem;
-                    @include buttonStyle();
-                    @include centerObject();
-                }
-
-                button:last-child {
-                    background: rgb(90, 90, 90);
+                    text-decoration: none;
+                    color: $awgFont1;
                 }
             }
         }
-    }
 
-    // Services
+        // Splash page
 
-    .service-container {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-around;
-        align-items: center;
-        @include contentBox();
-        margin: 3rem 0 1.5rem;
+        .content-splash {
+            display: flex;
+            align-items: center;
+            height: 51rem;
+            justify-content: flex-end;
+            background: url("../../img/splash-bg.gif") fixed;
+            background-size: 120rem;
 
-        h2 {
-            @include boldText();
+            .content-greeting {
+                display: flex;
+                flex-flow: column wrap;
+                text-align: right;
+                padding-right: 3rem;
+                color: lightgray;
+
+                h2 {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+
+                h2,
+                p {
+                    animation: fadeIn 2s;
+                }
+            }
         }
 
-        h2::before,
-        h2::after {
-            content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-            text-decoration: line-through;
-            margin: auto 0.4em;
-        }
+        // About -- Containers holding hours, payment info, etc below Splash.
 
-        .services {
+        .content-about {
             display: flex;
             flex-flow: row wrap;
             justify-content: space-evenly;
-            width: 75%;
-            height: 25rem;
+            min-width: 100%;
+            width: 100%;
+            background: rgb(80, 80, 80);
+            height: 15rem;
 
-            .service-box {
+            .about-container {
                 display: flex;
                 flex-flow: column wrap;
                 align-items: center;
-                justify-content: space-around;
-                min-width: 14rem;
-                width: 25.5%;
+                justify-content: space-evenly;
+                width: 15rem;
+                height: 100%;
+                color: white;
+                // opacity: 0;
 
-
-                i {
-                    margin-bottom: 1rem;
+                h2 {
+                    font-weight: bold;
+                    font-size: 1.2rem;
                 }
 
-                h3 {
-                    font-size: 1.5rem;
+                p {
+                    font-size: 0.9rem;
                     text-align: center;
                 }
             }
         }
-    }
 
-    // Benefit/Convenience (below services)
+        // Company Information
 
-    .conv-container {
-        @include centerObject();
-        width: 100%;
-        height: 22.5rem;
-        background: url("../../img/conv-bg.jpg") bottom left fixed;
+        .company-container {
+            @include centerObject();
+            @include contentBox();
 
-        .conv-info-container {
+            img {
+                width: 30rem;
+                height: 20rem;
+                margin: 0 1rem;
+            }
+
+            .company-info {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                align-items: center;
+                width: 35rem;
+                height: 100%;
+                margin-left: 1rem;
+                text-align: center;
+                line-height: 1.5rem;
+
+                h2 {
+                    @include boldText();
+                    margin-top: 1rem;
+                }
+
+                h2:before,
+                h2:after {
+                    content: '\00a0\00a0\00a0';
+                    text-decoration: line-through;
+                    margin: auto 0.2em;
+                }
+
+                p {
+                    width: 85%;
+                }
+
+                .info-buttons {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        margin: 0 1rem;
+                        @include buttonStyle();
+                        @include centerObject();
+                    }
+
+                    button:last-child {
+                        background: rgb(90, 90, 90);
+                    }
+                }
+            }
+        }
+
+        // Services
+
+        .service-container {
             display: flex;
             flex-flow: column wrap;
+            justify-content: space-around;
             align-items: center;
-            justify-content: space-evenly;
-            text-align: center;
-            width: 40%;
-            max-width: 35rem;
-            height: 13rem;
-            margin: 0 1rem;
-            color: white;
+            @include contentBox();
+            margin: 3rem 0 1.5rem;
 
             h2 {
                 @include boldText();
             }
 
-            a {
-                @include centerObject();
-                @include buttonStyle();
-                background: white;
-                color: black;
+            h2::before,
+            h2::after {
+                content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                text-decoration: line-through;
+                margin: auto 0.4em;
             }
-        }
-    }
 
-    .quicklinks-container {
-        @include centerObject();
-        @include contentBox();
-        background: linear-gradient(180deg, white 40%, #FDEC96);
-
-        .quicklinks-content-row {
-            @include centerObject();
-            justify-content: space-around;
-            height: 100%;
-            width: 80%;
-            min-width: fit-content;
-
-            .quicklinks-widget-col {
+            .services {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                height: 85%;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                width: 75%;
+                height: 25rem;
 
-                .quicklinks-info-col {
-                    margin: 0;
-                    padding: 0 1rem;
+                .service-box {
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: space-around;
+                    min-width: 14rem;
+                    width: 25.5%;
+
+
+                    i {
+                        margin-bottom: 1rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
                 }
             }
+        }
 
-            .quicklinks-info-col {
-                @include footerColObj();
+        // Benefit/Convenience (below services)
+
+        .conv-container {
+            @include centerObject();
+            width: 100%;
+            height: 22.5rem;
+            background: url("../../img/conv-bg.jpg") bottom left fixed;
+
+            .conv-info-container {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: space-evenly;
+                text-align: center;
+                width: 40%;
+                max-width: 35rem;
+                height: 13rem;
+                margin: 0 1rem;
+                color: white;
 
                 h2 {
-                    display: flex;
-                    align-items: center;
-                    font-size: 1.1rem;
+                    @include boldText();
+                }
 
-                    img {
-                        width: 2rem;
+                a {
+                    @include centerObject();
+                    @include buttonStyle();
+                    background: white;
+                    color: black;
+                }
+            }
+        }
+
+        .quicklinks-container {
+            @include centerObject();
+            @include contentBox();
+            background: linear-gradient(180deg, white 40%, #FDEC96);
+
+            .quicklinks-content-row {
+                @include centerObject();
+                justify-content: space-around;
+                height: 100%;
+                width: 80%;
+                min-width: fit-content;
+
+                .quicklinks-widget-col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 85%;
+
+                    .quicklinks-info-col {
+                        margin: 0;
+                        padding: 0 1rem;
                     }
                 }
 
-            }
+                .quicklinks-info-col {
+                    @include footerColObj();
+                    color: $awgFont2;
 
-            .quicklinks-widget-1 {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                height: 85%;
-                width: 14rem;
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
 
-                img,
-                p {
-                    width: 13rem;
-                    min-width: 13rem;
+                    h2 {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.1rem;
+
+                        img {
+                            width: 2rem;
+                        }
+                    }
+
                 }
-            }
 
-            .quicklinks-widget-4 {
-                height: 85%;
-            }
+                .quicklinks-widget-1 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    height: 85%;
+                    width: 14rem;
 
+                    img,
+                    p {
+                        width: 13rem;
+                        min-width: 13rem;
+                    }
+                }
+
+                .quicklinks-widget-4 {
+                    height: 85%;
+                }
+
+            }
         }
     }
 }

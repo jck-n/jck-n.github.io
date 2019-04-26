@@ -182,11 +182,6 @@
                         height: 10rem;
                         border-bottom: 1px solid $awgFont1;
                         width: 90%;
-
-                        a,
-                        li {
-                            text-decoration: none;
-                        }
                     }
 
                     .quicklinks-widget-1 {
@@ -334,7 +329,7 @@
     }
 }
 
-@media (max-width: 2560px) {
+@media (min-width: 2560px) {
     .container {
         .content-container {
             .content-splash {
