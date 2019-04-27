@@ -1,8 +1,8 @@
 .container {
+
     .footer-container {
         @include centerObject();
         height: 3rem;
-        background: #FDEC96;
 
         .footer-row-1 {
             display: flex;
@@ -13,4 +13,5 @@
             font-size: 0.75rem;
         }
     }
+
 }

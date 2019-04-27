@@ -108,7 +108,6 @@
 
                 .company-container {
                     flex-flow: column;
-                    // @include centerObject();
                     height: 55rem;
                     margin: 0 auto;
                     padding: 0;
@@ -116,6 +115,8 @@
 
                     img {
                         margin-top: 2.5rem;
+                        height: auto;
+                        width: auto;
                     }
 
                     .company-info {
@@ -178,11 +179,7 @@
                             height: 10rem;
                             border-bottom: 1px solid $awgFont1;
                             width: 90%;
-
-                            a,
-                            li {
-                                text-decoration: none;
-                            }
+                            text-indent: 0;
                         }
 
                         .quicklinks-widget-1 {
@@ -311,8 +308,10 @@
             }
         }
     }
+}
 
-    @media (max-width: 960px) {
+@media (max-width: 960px) {
+    .container {
         .content-container {
             .company-container {
                 img {
@@ -326,6 +325,14 @@
 
                 .services {
                     width: 100%;
+                }
+            }
+        }
+
+        .quicklinks-container {
+            .quicklinks-content-row {
+                .quicklinks-info-col {
+                    text-indent: 0;
                 }
             }
         }

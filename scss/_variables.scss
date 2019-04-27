@@ -1,4 +1,4 @@
-$orangeElement: rgb(255, 222, 107);
+$orangeElement: rgb(253, 173, 51);
 $awgFont1: rgb(87, 71, 66);
 $awgFont2: rgb(128, 118, 116);
 
@@ -33,8 +33,7 @@ $awgFont2: rgb(128, 118, 116);
 @mixin footerColObj {
     display: flex;
     flex-direction: column;
-    padding: 0 1rem;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 1.1rem;
 }
 
