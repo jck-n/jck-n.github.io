@@ -83,7 +83,6 @@
 
                 .content-splash {
                     background: url('../../img/splash-bg.gif');
-                    background-position: 20%;
                     height: 45rem;
                 }
 
@@ -130,7 +129,7 @@
                     flex-direction: column;
                     justify-content: space-evenly;
                     height: 37.5rem;
-                    background-position: right top;
+                    background-position: center;
 
                     .conv-info-container {
                         width: 65%;
@@ -285,7 +284,6 @@
                     }
 
                     .conv-container {
-                        background-position: center top;
 
                         .conv-info-container {
                             width: 80%;

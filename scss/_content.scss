@@ -91,8 +91,8 @@
         align-items: center;
         height: 51rem;
         justify-content: flex-end;
-        background: url("../../img/splash-bg.gif") fixed;
-        background-size: 150%;
+        background: url("../../img/splash-bg.gif") fixed no-repeat;
+        background-size: cover;
 
         .content-greeting {
             display: flex;
@@ -258,7 +258,8 @@
         @include centerObject();
         width: 100%;
         height: 22.5rem;
-        background: url("../../img/conv-bg.jpg") bottom left fixed;
+        background: url("../../img/conv-bg-2.jpg") top fixed;
+        background-size: cover;
 
         .conv-info-container {
             display: flex;
