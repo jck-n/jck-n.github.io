@@ -289,7 +289,6 @@
     .quicklinks-container {
         @include centerObject();
         @include contentBox();
-        background: linear-gradient(180deg, white 40%, #FDEC96);
 
         .quicklinks-content-row {
             @include centerObject();
@@ -306,12 +305,17 @@
 
                 .quicklinks-info-col {
                     margin: 0;
-                    padding: 0 1rem;
+                    width: 100%;
                 }
             }
 
             .quicklinks-info-col {
                 @include footerColObj();
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                }
 
                 h2 {
                     display: flex;
