@@ -1,0 +1,12 @@
+@import "variables";
+
+.content-container {
+    .location-container {
+        margin: 0 auto;
+
+        #google-map {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
