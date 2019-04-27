@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var windowpos = $(window).scrollTop();
-        if (windowpos >= 0.1 && windowpos <= 1400) {
+        if (windowpos >= 0.1 && windowpos <= 1200) {
             fadeElementIn(aboutFade);
         } else {
             fadeElementOut(aboutFade);
