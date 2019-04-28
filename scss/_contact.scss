@@ -3,6 +3,7 @@
 .content-container {
 
     .location-container {
+        width: 100%;
         background: url("../../img/splash-bg.jpg") center;
         background-size: cover;
         height: 25rem;
@@ -14,8 +15,22 @@
 
     }
 
-    .map-container {
-        margin: 0 auto;
+    .contact-container {
+        justify-content: space-evenly;
+        height: 50rem;
+        border: 1px solid red;
+
+        .map-container {
+            border: 1px solid red;
+            justify-content: space-between;
+
+            .google-map {
+                width: 25rem;
+                height: 25rem;
+            }
+
+        }
+
     }
 
 }

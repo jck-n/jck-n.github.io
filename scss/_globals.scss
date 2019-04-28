@@ -170,8 +170,16 @@ body {
     justify-content: center;
 }
 
+.content-x-center {
+    justify-content: center;
+}
+
+.content-y-center {
+    align-items: center;
+}
+
 .element-box-1 {
-    @include contentBox();
+    height: 30rem;
 }
 
 // Google Maps Infowindow
