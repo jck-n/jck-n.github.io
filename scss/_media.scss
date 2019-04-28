@@ -55,7 +55,9 @@
     //Content Media View
 
     @media (max-width: 768px) {
+
         .content-container {
+
             .content-navbar {
                 flex-flow: column wrap;
                 justify-content: space-evenly;
@@ -69,6 +71,7 @@
                     width: 100%;
                     justify-content: space-evenly;
                 }
+
             }
 
             .content-splash {
@@ -93,7 +96,9 @@
                     p {
                         font-size: 1.2rem;
                     }
+
                 }
+
             }
 
             .company-container {
@@ -114,6 +119,7 @@
                     width: 100%;
                     margin: 0;
                 }
+
             }
 
             .conv-container {
@@ -128,7 +134,9 @@
                     p {
                         font-size: 0.85rem;
                     }
+
                 }
+
             }
 
             .service-container {
@@ -142,7 +150,9 @@
                         min-width: 0;
                         width: 33%;
                     }
+
                 }
+
             }
 
             .quicklinks-container {
@@ -183,8 +193,11 @@
                             margin: 0.5rem 0;
                             text-align: center;
                         }
+
                     }
+
                 }
+
             }
 
             @media (max-width: 450px) {
@@ -199,11 +212,15 @@
                         font-size: 0.75rem;
 
                         .dropdown:hover {
+
                             .left-menu {
                                 left: -135%;
                             }
+
                         }
+
                     }
+
                 }
 
                 .content-splash {
@@ -216,9 +233,11 @@
                         padding-right: 0;
                         width: 100%;
                     }
+
                 }
 
                 .company-container {
+
                     .company-info {
                         h2 {
                             font-size: 1.75rem;
@@ -234,7 +253,9 @@
                         .info-buttons {
                             width: 90%;
                         }
+
                     }
+
                 }
 
                 .service-container {
@@ -257,7 +278,9 @@
                             h3 {
                                 font-size: 1.1rem;
                             }
+
                         }
+
                     }
 
                     h2 {
@@ -268,6 +291,7 @@
                     h2:after {
                         content: '\00a0\00a0\00a0\00a0';
                     }
+
                 }
 
                 .conv-container {
@@ -275,33 +299,47 @@
                     .conv-info-container {
                         width: 80%;
                     }
+
                 }
 
                 .quicklinks-container {
+
                     .quicklinks-content-row {
+
                         .quicklinks-widget-1 {
 
                             img,
                             p {
                                 width: 15rem;
                             }
+
                         }
+
                     }
+
                 }
+
             }
+
         }
+
     }
+
 }
 
 // Image / Text breakpoint adjustments
 
 @media (max-width: 960px) {
+
     .content-container {
+
         .company-container {
+
             img {
                 width: 20rem;
                 height: 12.5rem;
             }
+
         }
 
         .service-container {
@@ -310,14 +348,21 @@
             .services {
                 width: 100%;
             }
+
         }
+
     }
 
     .quicklinks-container {
+
         .quicklinks-content-row {
+
             .quicklinks-info-col {
                 text-indent: 0;
             }
+
         }
+
     }
+
 }
