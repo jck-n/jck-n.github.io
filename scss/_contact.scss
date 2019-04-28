@@ -17,12 +17,44 @@
 
     .contact-container {
         justify-content: space-evenly;
-        height: 50rem;
-        border: 1px solid red;
+        border-bottom: 1px solid $awgFont2;
+        padding: 3rem 0;
 
-        .map-container {
-            border: 1px solid red;
-            justify-content: space-between;
+
+        .contact-max-width {
+            width: 100%;
+            max-width: 60rem;
+            justify-content: space-evenly;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .current-hours {
+                align-self: flex-start;
+                width: 45%;
+                height: 25rem;
+
+
+            }
+
+            .map-container {
+                justify-content: space-between;
+                height: 45rem;
+
+                h2,
+                p,
+                .contact-info-box {
+                    width: 100%;
+
+                    i {
+                        margin-right: 0.75rem;
+                    }
+
+                }
+
+
+            }
 
             .google-map {
                 width: 25rem;
@@ -30,7 +62,5 @@
             }
 
         }
-
     }
-
 }
