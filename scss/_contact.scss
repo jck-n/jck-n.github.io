@@ -17,14 +17,13 @@
 
     .contact-container {
         justify-content: space-evenly;
-        border: 1px solid blue;
+        border-bottom: 1px solid $awgFont2;
         padding: 3rem 0;
 
 
         .contact-max-width {
             width: 100%;
             max-width: 60rem;
-            border: 1px solid red;
             justify-content: space-evenly;
 
             h2 {
@@ -32,13 +31,14 @@
             }
 
             .current-hours {
-                border: 1px solid red;
                 align-self: flex-start;
                 width: 45%;
+                height: 25rem;
+
+
             }
 
             .map-container {
-                border: 1px solid red;
                 justify-content: space-between;
                 height: 45rem;
 
