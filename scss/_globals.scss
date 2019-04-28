@@ -1,3 +1,5 @@
+@import "variables";
+
 html,
 body,
 div,
@@ -149,4 +151,38 @@ body {
     width: 1px;
     border-right: 1px solid gray;
     margin: 0 0.5rem;
+}
+
+// Positioning Containers
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.element-box-1 {
+    @include contentBox();
+}
+
+// Google Maps Infowindow
+
+#infoWindow {
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
 }

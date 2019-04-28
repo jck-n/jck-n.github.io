@@ -1,0 +1,21 @@
+@import "variables";
+
+.content-container {
+
+    .location-container {
+        background: url("../../img/splash-bg.jpg") center;
+        background-size: cover;
+        height: 25rem;
+
+        h1 {
+            @include boldText();
+            color: $awgFont2;
+        }
+
+    }
+
+    .map-container {
+        margin: 0 auto;
+    }
+
+}

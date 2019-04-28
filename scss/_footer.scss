@@ -1,17 +1,15 @@
-.container {
+@import "variables";
 
-    .footer-container {
-        @include centerObject();
-        height: 3rem;
+.footer-container {
+    @include centerObject();
+    height: 3rem;
 
-        .footer-row-1 {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
-            color: $awgFont2;
-            font-size: 0.75rem;
-        }
+    .footer-row-1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        color: $awgFont2;
+        font-size: 0.75rem;
     }
-
 }

@@ -3,329 +3,366 @@
 //Header Media View
 
 @media (max-width: 768px) {
-    .container {
-        .contact-header {
-            flex-flow: column wrap;
-            justify-content: center;
-            min-height: 10rem;
+    .contact-header {
+        flex-flow: column wrap;
+        justify-content: center;
+        min-height: 10rem;
 
-            .contact-options {
-                align-items: center;
-                min-height: 7rem;
-                min-width: 60%;
+        .contact-options {
+            align-items: center;
+            min-height: 7rem;
+            min-width: 60%;
 
-                .contact-info {
-                    line-height: 3rem;
-                }
-            }
-
-            h2 {
-                padding: 0.5rem 0;
-                width: 100%;
-            }
-
-            @media (max-width: 414px) {
-                height: 16.5rem;
-                justify-content: flex-start;
-
-                h2 {
-                    width: 100%;
-                    margin: 1rem 0;
-                }
-
-                .contact-options {
-                    display: flex;
-                    flex-flow: row wrap;
-                    height: 5rem;
-                    width: 100%;
-
-                    .contact-info {
-                        width: 100%;
-                        border-bottom: 1px solid darkgray;
-                    }
-
-                    .contact-icons {
-                        align-items: center;
-                        width: 100%;
-                        height: 5rem;
-                    }
-                }
+            .contact-info {
+                line-height: 3rem;
             }
         }
 
-        //Content Media View
+        h2 {
+            padding: 0.5rem 0;
+            width: 100%;
+        }
 
-        @media (max-width: 768px) {
-            .content-container {
-                .content-navbar {
-                    flex-flow: column wrap;
+        @media (max-width: 414px) {
+            height: 16.5rem;
+            justify-content: flex-start;
+
+            h2 {
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            .contact-options {
+                display: flex;
+                flex-flow: row wrap;
+                height: 5rem;
+                width: 100%;
+
+                .contact-info {
+                    width: 100%;
+                    border-bottom: 1px solid darkgray;
+                }
+
+                .contact-icons {
+                    align-items: center;
+                    width: 100%;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+
+    //Content Media View
+
+    @media (max-width: 768px) {
+
+        .content-container {
+
+            .content-navbar {
+                flex-flow: column wrap;
+                justify-content: space-evenly;
+                height: 18rem;
+
+                img {
+                    width: 20rem;
+                }
+
+                .nav {
+                    width: 100%;
                     justify-content: space-evenly;
-                    height: 18rem;
+                }
+
+            }
+
+            .content-splash {
+                background: url('../../img/splash-bg.gif');
+                height: 45rem;
+            }
+
+            .content-about {
+                flex-flow: column wrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 50rem;
+
+                .about-container {
+                    max-height: 15rem;
+                    width: 75%;
+
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+
+                }
+
+            }
+
+            .company-container {
+                flex-flow: column;
+                height: 55rem;
+                margin: 0 auto;
+                padding: 0;
+                width: 100%;
+
+                img {
+                    margin-top: 2.5rem;
+                    height: auto;
+                    width: auto;
+                }
+
+                .company-info {
+                    flex-flow: row wrap;
+                    width: 100%;
+                    margin: 0;
+                }
+
+            }
+
+            .conv-container {
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 37.5rem;
+                background-position: center;
+
+                .conv-info-container {
+                    width: 65%;
+
+                    p {
+                        font-size: 0.85rem;
+                    }
+
+                }
+
+            }
+
+            .service-container {
+                height: 50rem;
+                margin: 0;
+
+                .services {
+                    justify-content: center;
+
+                    .service-box {
+                        min-width: 0;
+                        width: 33%;
+                    }
+
+                }
+
+            }
+
+            .quicklinks-container {
+                height: fit-content;
+                max-width: 100%;
+
+                .quicklinks-content-row {
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    min-width: 0;
+
+                    .quicklinks-widget-col {
+                        height: 20rem;
+                        width: 90%;
+                        align-items: center;
+                    }
+
+                    .quicklinks-info-col {
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 10rem;
+                        border-bottom: 1px solid $awgFont1;
+                        width: 90%;
+                        text-indent: 0;
+                    }
+
+                    .quicklinks-widget-1 {
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 15rem;
+
+                        img,
+                        p {
+                            width: 20rem;
+                            margin: 0.5rem 0;
+                            text-align: center;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            @media (max-width: 450px) {
+                .content-navbar {
 
                     img {
-                        width: 20rem;
+                        width: 18rem;
                     }
 
                     .nav {
                         width: 100%;
-                        justify-content: space-evenly;
+                        font-size: 0.75rem;
+
+                        .dropdown:hover {
+
+                            .left-menu {
+                                left: -135%;
+                            }
+
+                        }
+
                     }
+
                 }
 
                 .content-splash {
                     background: url('../../img/splash-bg.gif');
+                    background-position: 20%;
                     height: 45rem;
-                }
 
-                .content-about {
-                    flex-flow: column wrap;
-                    justify-content: space-around;
-                    align-items: center;
-                    height: 50rem;
-
-                    .about-container {
-                        max-height: 15rem;
-                        width: 75%;
-
-                        h2 {
-                            font-size: 1.4rem;
-                        }
-
-                        p {
-                            font-size: 1.2rem;
-                        }
+                    .content-greeting {
+                        text-align: center;
+                        padding-right: 0;
+                        width: 100%;
                     }
+
                 }
 
                 .company-container {
-                    flex-flow: column;
-                    height: 55rem;
-                    margin: 0 auto;
-                    padding: 0;
-                    width: 100%;
-
-                    img {
-                        margin-top: 2.5rem;
-                        height: auto;
-                        width: auto;
-                    }
 
                     .company-info {
-                        flex-flow: row wrap;
-                        width: 100%;
-                        margin: 0;
-                    }
-                }
-
-                .conv-container {
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    height: 37.5rem;
-                    background-position: center;
-
-                    .conv-info-container {
-                        width: 65%;
-
-                        p {
-                            font-size: 0.85rem;
-                        }
-                    }
-                }
-
-                .service-container {
-                    height: 50rem;
-                    margin: 0;
-
-                    .services {
-                        justify-content: center;
-
-                        .service-box {
-                            min-width: 0;
-                            width: 33%;
-                        }
-                    }
-                }
-
-                .quicklinks-container {
-                    height: fit-content;
-                    max-width: 100%;
-
-                    .quicklinks-content-row {
-                        width: 100%;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        align-items: center;
-                        min-width: 0;
-
-                        .quicklinks-widget-col {
-                            height: 20rem;
-                            width: 100%;
-                            align-items: center;
-                        }
-
-                        .quicklinks-info-col {
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: space-between;
-                            height: 10rem;
-                            border-bottom: 1px solid $awgFont1;
-                            width: 90%;
-                            text-indent: 0;
-                        }
-
-                        .quicklinks-widget-1 {
-                            flex-direction: column;
-                            justify-content: center;
-                            height: 15rem;
-
-                            img,
-                            p {
-                                width: 20rem;
-                                margin: 0.5rem 0;
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-
-                @media (max-width: 450px) {
-                    .content-navbar {
-
-                        img {
-                            width: 18rem;
-                        }
-
-                        .nav {
-                            width: 100%;
-                            font-size: 0.75rem;
-
-                            .dropdown:hover {
-                                .left-menu {
-                                    left: -135%;
-                                }
-                            }
-                        }
-                    }
-
-                    .content-splash {
-                        background: url('../../img/splash-bg.gif');
-                        background-position: 20%;
-                        height: 45rem;
-
-                        .content-greeting {
-                            text-align: center;
-                            padding-right: 0;
-                            width: 100%;
-                        }
-                    }
-
-                    .company-container {
-                        .company-info {
-                            h2 {
-                                font-size: 1.75rem;
-                                margin: 0;
-                            }
-
-                            h2:before,
-                            h2:after {
-                                content: '';
-                                margin: 0;
-                            }
-
-                            .info-buttons {
-                                width: 90%;
-                            }
-                        }
-                    }
-
-                    .service-container {
-                        width: 100%;
-                        height: 50rem;
-                        justify-content: space-evenly;
-
-                        .services {
-                            min-height: 0;
-                            align-items: center;
-                            height: 30rem;
-                            max-width: 100%;
-
-                            .service-box {
-                                justify-content: center;
-                                width: 50%;
-                                min-width: 0;
-                                font-size: 0.75rem;
-
-                                h3 {
-                                    font-size: 1.1rem;
-                                }
-                            }
-                        }
-
                         h2 {
-                            top: 0;
+                            font-size: 1.75rem;
+                            margin: 0;
                         }
 
                         h2:before,
                         h2:after {
-                            content: '\00a0\00a0\00a0\00a0';
+                            content: '';
+                            margin: 0;
                         }
+
+                        .info-buttons {
+                            width: 90%;
+                        }
+
                     }
 
-                    .conv-container {
+                }
 
-                        .conv-info-container {
-                            width: 80%;
-                        }
-                    }
+                .service-container {
+                    width: 100%;
+                    height: 50rem;
+                    justify-content: space-evenly;
 
-                    .quicklinks-container {
-                        .quicklinks-content-row {
-                            .quicklinks-widget-1 {
+                    .services {
+                        min-height: 0;
+                        align-items: center;
+                        height: 30rem;
+                        max-width: 100%;
 
-                                img,
-                                p {
-                                    width: 15rem;
-                                }
+                        .service-box {
+                            justify-content: center;
+                            width: 50%;
+                            min-width: 0;
+                            font-size: 0.75rem;
+
+                            h3 {
+                                font-size: 1.1rem;
                             }
+
                         }
+
                     }
+
+                    h2 {
+                        top: 0;
+                    }
+
+                    h2:before,
+                    h2:after {
+                        content: '\00a0\00a0\00a0\00a0';
+                    }
+
                 }
+
+                .conv-container {
+
+                    .conv-info-container {
+                        width: 80%;
+                    }
+
+                }
+
+                .quicklinks-container {
+
+                    .quicklinks-content-row {
+
+                        .quicklinks-widget-1 {
+
+                            img,
+                            p {
+                                width: 15rem;
+                            }
+
+                        }
+
+                    }
+
+                }
+
             }
 
-            .footer-container {
-                .footer-row-1 {
-                    border-top: 0 !important;
-                }
-            }
         }
+
     }
+
 }
 
+// Image / Text breakpoint adjustments
+
 @media (max-width: 960px) {
-    .container {
-        .content-container {
-            .company-container {
-                img {
-                    width: 20rem;
-                    height: 12.5rem;
-                }
+
+    .content-container {
+
+        .company-container {
+
+            img {
+                width: 20rem;
+                height: 12.5rem;
             }
 
-            .service-container {
-                min-height: 40rem;
-
-                .services {
-                    width: 100%;
-                }
-            }
         }
 
-        .quicklinks-container {
-            .quicklinks-content-row {
-                .quicklinks-info-col {
-                    text-indent: 0;
-                }
+        .service-container {
+            min-height: 40rem;
+
+            .services {
+                width: 100%;
             }
+
         }
+
     }
+
+    .quicklinks-container {
+
+        .quicklinks-content-row {
+
+            .quicklinks-info-col {
+                text-indent: 0;
+            }
+
+        }
+
+    }
+
 }
