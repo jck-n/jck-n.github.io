@@ -19,7 +19,7 @@
         justify-content: space-evenly;
         border-bottom: 1px solid $awgFont2;
         padding: 3rem 0;
-
+        border: 1px solid red;
 
         .contact-max-width {
             width: 100%;
@@ -34,7 +34,8 @@
                 align-self: flex-start;
                 width: 45%;
                 height: 25rem;
-
+                border: 1px solid red;
+                text-align: right;
 
             }
 
