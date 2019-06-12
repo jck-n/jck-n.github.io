@@ -47,6 +47,7 @@ $awgFont2: rgb(128, 118, 116);
     to {
         opacity: 1
     }
+
 }
 
 @keyframes scrollFadeIn {
@@ -69,6 +70,7 @@ $awgFont2: rgb(128, 118, 116);
     100% {
         opacity: 1;
     }
+
 }
 
 @keyframes scrollFadeOut {
@@ -91,4 +93,5 @@ $awgFont2: rgb(128, 118, 116);
     100% {
         opacity: 0;
     }
+
 }
