@@ -1,5 +1,73 @@
 @import "variables";
 
+//Quicklinks Above Company Footer
+
+.quicklinks-container {
+    @include centerObject();
+    @include contentBox();
+
+    .quicklinks-content-row {
+        @include centerObject();
+        justify-content: space-around;
+        height: 100%;
+        width: 80%;
+        min-width: fit-content;
+
+        .quicklinks-widget-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 85%;
+
+            .quicklinks-info-col {
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        .quicklinks-info-col {
+            @include footerColObj();
+            align-items: center;
+
+            a {
+                text-decoration: none;
+            }
+
+            h2 {
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+
+                img {
+                    width: 2rem;
+                }
+            }
+
+        }
+
+        .quicklinks-widget-1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 85%;
+            width: 14rem;
+
+            img,
+            p {
+                width: 13rem;
+                min-width: 13rem;
+            }
+        }
+
+        .quicklinks-widget-4 {
+            height: 85%;
+        }
+
+    }
+}
+
+// Company Footer
+
 .footer-container {
     @include centerObject();
     height: 3rem;

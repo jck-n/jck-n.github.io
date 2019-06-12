@@ -6,7 +6,7 @@
         width: 100%;
         background: url("../../img/splash-bg.jpg") center;
         background-size: cover;
-        height: 25rem;
+        height: 24.5rem;
 
         h1 {
             @include boldText();
@@ -19,7 +19,6 @@
         justify-content: space-evenly;
         border-bottom: 1px solid $awgFont2;
         padding: 3rem 0;
-        border: 1px solid red;
 
         .contact-max-width {
             width: 100%;
@@ -32,11 +31,11 @@
 
             .current-hours {
                 align-self: flex-start;
+                justify-content: space-between;
                 width: 45%;
-                height: 25rem;
-                border: 1px solid red;
+                height: 16rem;
                 text-align: right;
-
+                // border: 1px solid red;
             }
 
             .map-container {
