@@ -21,7 +21,18 @@
         height: 20rem;
         justify-content: space-evenly;
 
-        .peer-ibox {}
+        .peer-ibox {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+
+            a {
+                @include centerObject();
+                @include buttonStyle();
+                margin-top: 1rem;
+            }
+
+        }
     }
 
 }
