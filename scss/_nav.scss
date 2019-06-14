@@ -1,0 +1,96 @@
+//SCSS File dedicated to the navbar
+
+.content-container {
+
+    .content-navbar {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 9rem;
+
+        img {
+            width: 15rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+
+            .dropdown {
+                position: relative;
+                display: flex;
+                padding: 1rem 0;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+
+                .nav-item {
+                    display: flex;
+                    align-items: center;
+                }
+
+                button {
+                    font-family: "Merriweather", sans-serif;
+                    background: none;
+                    border: 0;
+                    font-size: inherit;
+                    color: $awgFont1;
+                    padding: 0;
+
+                    i {
+                        margin-left: 0.2rem;
+                    }
+                }
+
+                button:hover {
+                    cursor: pointer;
+                }
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: -25%;
+                    border-top: 0.2rem solid $orangeElement;
+                    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    width: 10rem;
+                    height: 2rem;
+                    text-align: center;
+                }
+            }
+
+            .dropdown:hover {
+
+                .dropdown-menu {
+                    display: block;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 0.05rem solid rgba(128, 128, 128, 0.25);
+                        height: 100%;
+                        background: white;
+                        font-size: 0.85rem;
+
+                        a {
+                            width: 100%;
+                            color: $awgFont2;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                color: $awgFont1;
+            }
+
+        }
+
+    }
+
+}
