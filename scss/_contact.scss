@@ -10,6 +10,7 @@
 
         h1 {
             @include boldText();
+            font-size: 2.5rem;
             color: $awgFont2;
         }
 
@@ -26,7 +27,7 @@
             justify-content: space-evenly;
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.9rem;
             }
 
             .current-hours {
@@ -34,8 +35,12 @@
                 justify-content: space-between;
                 width: 45%;
                 height: 16rem;
-                text-align: right;
-                // border: 1px solid red;
+                text-align: center;
+
+                p {
+                    color: $awgFont2;
+                }
+
             }
 
             .map-container {
@@ -45,14 +50,18 @@
                 h2,
                 p,
                 .contact-info-box {
-                    width: 100%;
+                    width: 75%;
+                    text-align: center;
 
                     i {
-                        margin-right: 0.75rem;
+                        margin-right: 1rem;
                     }
 
                 }
 
+                p {
+                    color: $awgFont2;
+                }
 
             }
 
@@ -62,5 +71,7 @@
             }
 
         }
+
     }
+
 }
