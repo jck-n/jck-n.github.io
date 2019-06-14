@@ -221,7 +221,7 @@
     .service-container {
         display: flex;
         flex-flow: column wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         @include contentBox();
         margin: 3rem 0 1.5rem;
 

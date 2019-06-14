@@ -34,8 +34,7 @@
                 justify-content: space-between;
                 width: 45%;
                 height: 16rem;
-                text-align: right;
-                // border: 1px solid red;
+                text-align: center;
             }
 
             .map-container {
@@ -45,10 +44,11 @@
                 h2,
                 p,
                 .contact-info-box {
-                    width: 100%;
+                    width: 75%;
+                    text-align: center;
 
                     i {
-                        margin-right: 0.75rem;
+                        margin-right: 1rem;
                     }
 
                 }
