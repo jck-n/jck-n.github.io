@@ -1,1 +1,38 @@
 @import "variables";
+
+.content-container {
+
+    .peer-splash {
+        line-height: 4rem;
+
+        h1 {
+            @include boldText();
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            @include boldText();
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .peer-info {
+        height: 20rem;
+        justify-content: space-evenly;
+
+        .peer-ibox {
+            display: flex;
+            align-items: center;
+            height: fit-content;
+
+            a {
+                @include centerObject();
+                @include buttonStyle();
+                margin-top: 1rem;
+            }
+
+        }
+    }
+
+}
