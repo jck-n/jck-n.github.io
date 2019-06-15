@@ -33,12 +33,10 @@
                 justify-content: center;
 
                 h1 {
-                    @include boldText();
                     font-size: 2.5rem;
                 }
 
                 h2 {
-                    @include boldText();
                     font-size: 1.5rem;
                 }
 
