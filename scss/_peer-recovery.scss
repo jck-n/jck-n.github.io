@@ -14,8 +14,9 @@
             width: fit-content;
 
             .peer-lbar {
-                width: 10rem;
+                // width: 10rem;
                 height: 100%;
+                animation: widthInc 2s;
 
                 img {
                     max-width: 100%;

@@ -95,3 +95,13 @@ $awgFont2: rgb(128, 118, 116);
     }
 
 }
+
+@keyframes widthInc {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 13.2rem;
+    }
+}
