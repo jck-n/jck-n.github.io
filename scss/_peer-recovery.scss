@@ -2,51 +2,82 @@
 
 .content-container {
 
-    .peer-splash {
-        line-height: 4rem;
+    .peer-content {
+        display: flex;
+        flex-direction: row;
+        height: 50rem;
+        justify-content: space-between;
 
-        h1 {
-            @include boldText();
-            font-size: 2.5rem;
-        }
-
-        h2 {
-            @include boldText();
-            font-size: 1.5rem;
-        }
-
-    }
-
-    .peer-info {
-        height: 20rem;
-        justify-content: space-evenly;
-
-        .peer-ibox {
+        .peer-splash {
             display: flex;
-            align-items: center;
-            height: fit-content;
-            animation: fadeIn 2.5s;
+            flex-direction: row wrap;
+            width: fit-content;
 
-            button {
-                @include centerObject();
-                @include buttonStyle();
-                margin-top: 1rem;
+            .peer-lbar {
+                width: 10rem;
+                height: 100%;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
             }
 
-            button:hover {
-                background-color: $awgFont1;
-                color: $orangeElement;
-                transition: all 0.15s ease-in;
-                cursor: pointer;
+            .peer-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                line-height: 4rem;
+                width: fit-content;
+                justify-content: center;
 
+                h1 {
+                    @include boldText();
+                    font-size: 2.5rem;
+                }
+
+                h2 {
+                    @include boldText();
+                    font-size: 1.5rem;
+                }
             }
 
         }
 
-        .peer-ibox:last-child {
-            animation: fadeIn 5s;
-        }
+        .peer-info {
+            height: 15rem;
+            width: fit-content;
+            justify-content: space-evenly;
+            border: 1px solid red;
+            margin-right: 5rem;
 
+            .peer-ibox {
+                display: flex;
+                align-items: center;
+                height: fit-content;
+                animation: fadeIn 2.5s;
+
+                button {
+                    @include centerObject();
+                    @include buttonStyle();
+                    margin-top: 1rem;
+                }
+
+                button:hover {
+                    background-color: $awgFont1;
+                    color: $orangeElement;
+                    transition: all 0.15s ease-in;
+                    cursor: pointer;
+
+                }
+
+            }
+
+            .peer-ibox:last-child {
+                animation: fadeIn 5s;
+            }
+
+        }
     }
 
     .page-modals {
