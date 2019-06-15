@@ -14,8 +14,9 @@
             width: fit-content;
 
             .peer-lbar {
-                width: 10rem;
+                // width: 10rem;
                 height: 100%;
+                animation: widthInc 2s;
 
                 img {
                     max-width: 100%;
@@ -29,16 +30,20 @@
                 align-items: center;
                 line-height: 4rem;
                 width: fit-content;
+                height: 100%;
                 justify-content: center;
 
                 h1 {
-                    @include boldText();
                     font-size: 2.5rem;
                 }
 
                 h2 {
-                    @include boldText();
                     font-size: 1.5rem;
+                }
+
+                .peer-img {
+                    display: flex;
+                    margin-top: 6rem;
                 }
             }
 
