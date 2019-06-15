@@ -45,11 +45,10 @@
         }
 
         .peer-info {
-            height: 15rem;
+            height: 100%;
             width: fit-content;
             justify-content: space-evenly;
-            border: 1px solid red;
-            margin-right: 5rem;
+            margin-right: 15rem;
 
             .peer-ibox {
                 display: flex;
@@ -74,7 +73,7 @@
             }
 
             .peer-ibox:last-child {
-                animation: fadeIn 5s;
+                transition: animation fadeIn 5s;
             }
 
         }
