@@ -37,6 +37,26 @@ $awgFont2: rgb(128, 118, 116);
     line-height: 1.1rem;
 }
 
+@mixin underlineAfter {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: $orangeElement;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-bottom: 0.5rem;
+}
+
+@mixin underlineAHover {
+    width: 100%;
+    left: 0;
+}
+
+
 // Keyframes
 
 @keyframes fadeIn {
