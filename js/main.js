@@ -1,24 +1,30 @@
-var coachModal = document.getElementById("coach-modal");
-var serviceModal = document.getElementById("service-modal");
-var coachBtn = document.getElementById("coach-btn");
-var serviceBtn = document.getElementById("service-btn");
-var closeModal = document.getElementsByClassName("close-modal");
+let servModal = document.getElementById("service-modal");
+let coachModal = document.getElementById("coach-modal");
+let coachBtn = document.getElementById("coach-btn");
+let serviceBtn = document.getElementById("service-btn");
+let closeCoach = document.getElementById("close-coach");
+let closeServ = document.getElementById("close-service");
 
 coachBtn.onclick = function () {
     coachModal.style.display = "flex";
 }
 
-serviceBtn.onclick = () => {
-    serviceModal.style.display = "flex";
+serviceBtn.onclick = function () {
+    servModal.style.display = "flex";
 }
 
-closeModal.onclick = function () {
+closeCoach.onclick = function () {
     coachModal.style.display = "none";
 }
 
+closeServ.onclick = function () {
+    servModal.style.display = "none";
+}
+
 window.onclick = function (event) {
-    if (event.target == coachModal || serviceModal) {
+    if (event.target == coachModal) {
         coachModal.style.display = "none";
-        serviceModal.style.display = "none";
+    } else if (event.target == servModal) {
+        servModal.style.display = "none";
     }
 }
