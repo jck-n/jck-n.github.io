@@ -53,7 +53,7 @@
         .modal {
             display: flex;
             justify-content: center;
-            display: none;
+            // display: none;
             position: fixed;
             z-index: 1;
             left: 0;
@@ -64,15 +64,37 @@
             background-color: rgba(0, 0, 0, 0.4);
 
             .modal-content {
-                @include centerObject();
-
+                flex-direction: column;
                 margin-top: 8rem;
                 background: white;
-                width: fit-content;
+                width: 40rem;
                 height: fit-content;
-                padding: 5rem;
+                padding: 1rem;
+
+                h2 {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+
+                span {
+                    display: flex;
+                    width: fit-content;
+                    margin: 0 0 0 auto;
+                    margin-bottom: 1.5rem;
+                    color: $awgFont2;
+                    font-size: 1.5rem;
+                }
+
+                span:hover,
+                span:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
+
         }
+
     }
 
 }
