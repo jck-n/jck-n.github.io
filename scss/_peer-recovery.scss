@@ -18,7 +18,7 @@
 
 
                 img {
-                    animation: widthInc 2s;
+                    animation: widthInc 1.35s;
                     max-height: 100%;
                 }
             }
@@ -70,6 +70,10 @@
                 align-items: center;
                 height: fit-content;
                 animation: fadeIn 2.5s;
+
+                h2 {
+                    font-size: 1.1rem;
+                }
 
                 button {
                     @include centerObject();
