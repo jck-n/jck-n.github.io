@@ -60,6 +60,8 @@
 
         .content-container {
 
+            // Navbar Tablet Media View
+
             .content-navbar {
                 flex-flow: column wrap;
                 justify-content: space-evenly;
@@ -75,6 +77,8 @@
                 }
 
             }
+
+            //Splash Background Image on Homepage && Homepage Content
 
             .content-splash {
                 background: url('../../img/splash-bg.gif');
@@ -158,6 +162,8 @@
 
             }
 
+            // Quicklinks at the footer on all pages
+
             .quicklinks-container {
                 height: fit-content;
                 max-width: 100%;
@@ -203,6 +209,8 @@
 
             }
 
+            // Contact && Google Maps Page
+
             .contact-container {
 
                 .contact-max-width {
@@ -229,7 +237,45 @@
 
             }
 
+            .peer-content {
+                flex-direction: column;
+
+                .peer-splash {
+                    width: 100%;
+                    height: 100%;
+
+                    .peer-title {
+                        width: 100%;
+                        justify-content: space-between;
+                        margin-right: 6rem;
+
+                        h2,
+                        h1 {
+                            justify-content: center;
+                        }
+
+                        .peer-img {
+                            margin: 0;
+                        }
+                    }
+
+                    .peer-lbar {
+                        width: 10rem;
+                        animation: none;
+                    }
+
+                }
+
+                .peer-info {
+                    width: 100%;
+                }
+
+            }
+
             @media (max-width: 450px) {
+
+                //Navbar for Mobile View
+
                 .content-navbar {
 
                     img {
@@ -251,6 +297,8 @@
                     }
 
                 }
+
+                //Mobile View of Home Page
 
                 .content-splash {
                     background: url('../../img/splash-bg.gif');
@@ -331,6 +379,8 @@
 
                 }
 
+                //Quicklinks on Footer for Mobile
+
                 .quicklinks-container {
 
                     .quicklinks-content-row {
@@ -348,6 +398,8 @@
 
                 }
 
+                //Contact Us Page on Mobile
+
                 .contact-container {
 
                     .contact-max-width {
@@ -363,6 +415,32 @@
 
                     }
 
+                }
+
+                // Peer Recovery Page for Mobile
+
+                .peer-content {
+                    border: 1px solid red;
+                    height: 100rem !important;
+
+                    .peer-splash {
+
+                        .peer-img {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border: 1px solid red;
+                            height: fit-content;
+                        }
+
+                        .peer-lbar {
+                            border: 1px solid red;
+
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                    }
                 }
 
             }
@@ -393,6 +471,14 @@
 
             .services {
                 width: 100%;
+            }
+
+        }
+
+        .peer-content {
+
+            .peer-info {
+                margin: 0;
             }
 
         }

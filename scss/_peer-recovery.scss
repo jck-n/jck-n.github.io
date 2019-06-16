@@ -5,7 +5,7 @@
     .peer-content {
         display: flex;
         flex-direction: row;
-        height: 50rem;
+        height: fit-content;
         justify-content: space-between;
 
         .peer-splash {
@@ -14,12 +14,11 @@
             width: fit-content;
 
             .peer-lbar {
-                // width: 10rem;
-                height: 100%;
-                animation: widthInc 2s;
+                height: 50rem;
+
 
                 img {
-                    max-width: 100%;
+                    animation: widthInc 2s;
                     max-height: 100%;
                 }
             }
@@ -61,7 +60,7 @@
         }
 
         .peer-info {
-            height: 100%;
+            height: 50rem;
             width: fit-content;
             justify-content: space-evenly;
             margin-right: 15rem;
